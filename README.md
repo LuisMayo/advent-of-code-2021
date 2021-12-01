@@ -1,5 +1,5 @@
 # advent-of-code-2021
- Solutions to 2020's advent of code written in Deno's Typescript. https://adventofcode.com/2021
+ Solutions to 2021's advent of code written in Deno's Typescript. https://adventofcode.com/2021
 
 ## Getting Started
 
