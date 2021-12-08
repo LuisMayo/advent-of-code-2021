@@ -49,7 +49,7 @@ for (const line of lines) {
         if (!translatedDisplay.includes('d')) {
             return 0;
         }
-        // if it lacks a bottom segment it's number 9
+        // if it lacks the e segment and it's length is 6, then it's number 9
         if (!translatedDisplay.includes('e') && display.length === 6) {
             return 9;
         }
