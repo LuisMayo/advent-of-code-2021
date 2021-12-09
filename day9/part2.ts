@@ -10,7 +10,7 @@ for (const line of lines) {
     map.push(row);
 }
 
-let sum = 0;
+const lows: {i: number, j: number}[] = [];
 for (let i = 0; i < map.length; i++) {
     for (let j = 0; j < map[i].length; j++) {
         const number = map[i][j];
@@ -18,9 +18,13 @@ for (let i = 0; i < map.length; i++) {
             (j === 0 || map[i][j-1] > number) &&
             (i === map.length - 1 || map[i+1][j] > number) &&
             (j === map[i].length -1 || map[i][j+1] > number)) {
-                sum += number + 1;
+                lows.push({i, j});
             }
     }
+}
+
+for (const low of lows) {
+    
 }
 
 console.log('Risk level', sum);
