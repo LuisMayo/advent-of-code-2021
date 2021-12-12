@@ -4,6 +4,8 @@ const lines = rawInput.replaceAll('\r', '').split('\n').filter(line => line.leng
 
 const map: number[][] = [];
 
+function getClose
+
 // We get the data
 for (const line of lines) {
     const row = line.split('').map(item => +item);
